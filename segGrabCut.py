@@ -59,8 +59,8 @@ class segmentacion:
 
 	# cambia el tamaño de la imagen si es necesario
         if self.resize == True:
-             	height, width = self.imagein.shape[:2]
-             	self.imagein = cv2.resize(self.imagein,(int(self.scalefactor*width), int(self.scalefactor*height)), interpolation = cv2.INTER_NEAREST)
+            height, width = self.imagein.shape[:2]
+            self.imagein = cv2.resize(self.imagein,(int(self.scalefactor*width), int(self.scalefactor*height)), interpolation = cv2.INTER_NEAREST)
 
 	# crea copias de la imagen        
         imagecopy=self.imagein.copy()
